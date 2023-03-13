@@ -6,7 +6,7 @@
   },
   "builders": [{
     "type": "proxmox",
-    "proxmox_url": "https://proxmox.madalynn.xyz/api2/json",
+    "proxmox_url": "{{ user `proxmox_url` }}",
     "username": "{{ user `proxmox_username` }}",
     "password": "{{ user `proxmox_password` }}",
     "node": "proxmox",
